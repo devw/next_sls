@@ -1,15 +1,17 @@
 {
-  "name": "next_sls",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "10.2.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  }
+    "name": "next_sls",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev -p 3005",
+        "build": "next build",
+        "start": "next start",
+        "deploy": "serverless --debug"
+    },
+    "dependencies": {
+        "next": "10.2.0",
+        "next-i18next": "^8.2.0",
+        "react": "17.0.2",
+        "react-dom": "17.0.2"
+    }
 }
