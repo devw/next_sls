@@ -10,6 +10,7 @@
         "clean": "rm -rf .serverless_nextjs .serverless .next"
     },
     "dependencies": {
+        "@shopify/app-bridge-react": "^1.30.0",
         "@shopify/polaris": "^6.3.0",
         "axios": "^0.21.1",
         "next": "10.2.0",
