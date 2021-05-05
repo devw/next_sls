@@ -5,6 +5,7 @@ myNextApplication:
       # if you want to use an existing cloudfront distribution, provide it here
       distributionId: E1YZF2UWCTIUP5 #optional
     enableS3Acceleration: false
+    useServerlessTraceTarget: true
     bucketName: cookiebot-v2-test
     runtime:
       defaultLambda: "nodejs12.x"
