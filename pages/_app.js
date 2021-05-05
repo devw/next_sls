@@ -19,7 +19,6 @@ export default appWithTranslation(function Application({
     pageProps,
 }) {
     const router = useRouter();
-    console.log(`---router.locale----  ${router.locale}`);
     const polarisTranslations = require(`@shopify/polaris/locales/${router.locale}.json`);
     const appBridgeConfig = {
         apiKey: process.env.SHOPIFY_API_KEY,
