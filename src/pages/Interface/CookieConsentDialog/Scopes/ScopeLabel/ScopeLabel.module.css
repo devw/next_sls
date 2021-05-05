@@ -1,0 +1,13 @@
+.scope {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scope_info {
+  display: table;
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}

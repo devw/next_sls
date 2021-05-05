@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  padding: 10px 5px;
+  position: relative;
+}
+
+.picker {
+  position: absolute;
+  border-radius: 10px;
+  top: 55px;
+  left: 5px;
+  z-index: 998;
+  transition: all .3s ease;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.picker__opened {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta_label {
+
+}
+
+.cta_square {
+  width: 20px;
+  height: 20px;
+  border: 1px solid lightgray;
+  margin-left: 10px;
+}

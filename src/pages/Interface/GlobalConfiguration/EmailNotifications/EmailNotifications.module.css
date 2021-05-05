@@ -1,0 +1,11 @@
+.choice {
+  cursor: pointer;
+  padding: 8px;
+  margin: 8px 0px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.choice__selected {
+  background: #F2F7FD;
+}

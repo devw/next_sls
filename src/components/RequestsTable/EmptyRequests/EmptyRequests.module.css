@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 100px;
+}
+
+.container_left {
+  width: 50%;
+}
+
+.container_left img {
+  width: 220px;
+}
+
+.container_right {
+  width: 50%;
+}

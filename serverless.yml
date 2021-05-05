@@ -1,6 +1,9 @@
 myNextApplication:
   component: "@sls-next/serverless-component@1.19.0-alpha.35"
   inputs:
+    cloudfront:
+      # if you want to use an existing cloudfront distribution, provide it here
+      distributionId: E1YZF2UWCTIUP5 #optional
     enableS3Acceleration: false
     bucketName: cookiebot-v2-test
     runtime:

@@ -1,0 +1,33 @@
+.progressBar {
+
+}
+
+.progressBar_title {
+  margin-bottom: 6px;
+}
+
+.progressBar_subtitle {
+  margin-top: 6px;
+}
+
+.progressBar_container {
+  width: 200px;
+  height: 10px;
+  border-radius: 5px;
+  background: #CDD1D6;
+}
+
+.progressBar_progress {
+  width: 0px;
+  height: 100%;
+  border-radius: 5px;
+  background: #008060;
+}
+
+.progressBar_progress__warning {
+  background: gold;
+}
+
+.progressBar_progress__alert {
+  background: crimson;
+}

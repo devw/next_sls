@@ -1,0 +1,51 @@
+.container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+}
+
+.languageSelect {
+  position: relative;
+  border: 1px solid lightgray;
+  padding: 10px 15px;
+  cursor: pointer;
+  height: 40px;
+}
+
+.popup {
+  position: absolute;
+  background: white;
+  bottom: 40px;
+  left: 0px;
+  min-width: 100%;
+}
+
+.localeRow {
+  padding: 10px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.localeRow__selected {
+  color: white;
+  background:#008060;
+  font-weight: bold;
+}
+
+.countryCode {
+  font-weight: bold;
+  font-size: 10px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.cta {
+  display: flex;
+}
+
+.cta_logo {
+  display: block;
+  margin-right: 10px;
+}

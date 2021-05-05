@@ -6,12 +6,19 @@
         "dev": "next dev -p 3005",
         "build": "next build",
         "start": "next start",
-        "deploy": "serverless --debug"
+        "deploy": "serverless --debug",
+        "clean": "rm -rf .serverless_nextjs .serverless .next"
     },
     "dependencies": {
+        "@shopify/polaris": "^6.3.0",
+        "axios": "^0.21.1",
         "next": "10.2.0",
         "next-i18next": "^8.2.0",
         "react": "17.0.2",
-        "react-dom": "17.0.2"
+        "react-dom": "17.0.2",
+        "react-slick": "^0.28.1"
+    },
+    "devDependencies": {
+        "typescript": "^4.2.4"
     }
 }

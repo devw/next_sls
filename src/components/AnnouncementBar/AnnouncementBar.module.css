@@ -1,0 +1,16 @@
+.announcebar {
+  width: 100%;
+  padding: 10px 0px;
+  background: #008060;
+  position: fixed;
+  z-index: 9999;
+}
+
+.announcebar_text {
+  text-align: center;
+  color: white;
+}
+
+.announcebar_link {
+  color: white;
+}

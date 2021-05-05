@@ -1,0 +1,231 @@
+{
+  "Home": {
+    "title": "Tableau de bord",
+    "customize": "Personnaliser la popup",
+    "backHome": "Revenir à l'accueil",
+    "sessionsQuota": "sessions",
+    "upgrade": "Mettre à niveau pour augmenter la limite",
+    "popupStatus": "Votre popup de cookie est",
+    "popupEnabled": "activée",
+    "popupDisabled": "désactivée"
+  },
+  "CookieConsentDialog": {
+    "tabTitle": "Intégration Cookiebot",
+    "annotated": {
+      "title": "Intégration Cookiebot",
+      "description": "Remplissez les informations relatives à votre compte Cookiebot pour configurer facilement la popup sur votre boutique.",
+      "cookiebotAccount": "Accéder au panel Cookiebot"
+    },
+    "domainGroupId": {
+      "title": "Groupe de domaines ID",
+      "placeholder": "3257405e-c127-4bd0-a185-74673ebb8622",
+      "helpText": "",
+      "error": "Ce champ est obligatoire."
+    }
+  },
+  "GlobalConfiguration": {
+    "tabTitle": "Configuration globale",
+    "annotated": {
+      "title": "Configuration globale",
+      "description": "Modifiez les paramètres pour répondre aux besoins spécifiques de votre boutique.",
+      "buttons": {
+        "gdpr": "Voir la page GDPR",
+        "lgpd": "Voir la page LGPD",
+        "ccpa": "Voir la page CCPA",
+        "cookiesDeclaration": "Voir la page Déclaration de Cookies"
+      }
+    },
+    "section1": {
+      "title": "Global",
+      "language": {
+        "title": "Langue pour les emails/pages",
+        "options": {
+          "en": "Anglais",
+          "fr": "Français",
+          "de": "Allemand",
+          "es": "Espagnol",
+          "it": "Italien"
+        },
+        "helpText": {
+          "default": "",
+          "autoLangEnabled": "Vous avez choisi de détecter automatiquement la langue, désactivez cette option pour définir une langue spécifique.",
+          "autoLangDisabled": ""
+        }
+      },
+      "autoLang": {
+        "title": "Détecter la langue automatiquement"
+      }
+    },
+    "section2": {
+      "title": "Qui peut voir la popup ?",
+      "helpText": "Si vous décochez \"Toujours visible\", vous pouvez activer la popup pour des régions spécifiques.",
+      "checkboxes": {
+        "all": "Toujours visible",
+        "gdpr": "Uniquement GDPR (General Data Protection Regulation)",
+        "lgpd": "Uniquement LGPD (Lei Geral de Proteção de Dados)",
+        "ccpa": "Uniquement CCPA (California Consumer Privacy Act)"
+      },
+      "tooltips": {
+        "defaultText": "Ce règlement concerne les résidents",
+        "gdpr": "de l'Union Européenne",
+        "lgpd": "du Brésil",
+        "ccpa": "de la Californie"
+      }
+    },
+    "section3": {
+      "title": "Notifications",
+      "checkboxes": {
+        "erasure_confirmation": "Confirmation de la suppression",
+        "erasure": "Suppression",
+        "portability": "Portabilité",
+        "access": "Accès",
+        "rectification": "Rectification"
+      }
+    }
+  },
+  "RegulationRequests": {
+    "tabTitle": "Demandes de réglementation",
+    "headings": {
+      "email": "Email",
+      "type": "Type",
+      "ipAddress": "Adresse IP",
+      "creationDate": "Créé le"
+    },
+    "emptyState": {
+      "title": "Aucune demande de réglementation trouvée",
+      "description": "Lorsque des demandes seront faites, elles apparaîtront ici."
+    },
+    "resultsPerPage": "Affiche jusqu'à 15 résultats par page"
+  },
+  "DeletionRequests": {
+    "tabTitle": "Demandes de suppression",
+    "headings": {
+      "email": "Email",
+      "type": "Type",
+      "ipAddress": "Adresse IP",
+      "creationDate": "Créé le"
+    },
+    "emptyState": {
+      "title": "Aucune demande de suppression trouvée",
+      "description": "Lorsque des demandes seront faites, elles apparaîtront ici."
+    },
+    "resultsPerPage": "Affiche jusqu'à 15 résultats par page"
+  },
+  "DesignPopup": {
+    "tabTitle": "Design popup",
+    "showPreview": "Voir l'aperçu",
+    "hidePreview": "Cacher l'aperçu",
+    "annotated": {
+      "title": "Personnalisation",
+      "description": "Utilisez les paramètres ci-après pour personnaliser votre popup comme vous le souhaitez",
+      "storePreviewLink": "prévisualiser sur la boutique",
+      "mediaCard": {
+        "title": "Comment personnaliser la popup de cookie",
+        "description": "Dans cette courte vidéo nous vous expliquons comment éditer facilement votre popup de cookie."
+      }
+    },
+    "texts": {
+      "title": "Textes",
+      "popupTitle": {
+        "label": "Titre de la popup",
+        "helpText": "",
+        "placeholder": ""
+      },
+      "description": {
+        "label": "Description de la popup",
+        "helpText": "Ce texte est le message principal à afficher dans la popup de cookie.",
+        "placeholder": ""
+      },
+      "privacyPolicy": {
+        "label": "Voir la politique de confidentialité",
+        "helpText": "",
+        "placeholder": ""
+      },
+      "preferences": {
+        "label": "Éditer les préférences",
+        "helpText": "",
+        "placeholder": ""
+      },
+      "acceptBtn": {
+        "label": "Accepter",
+        "helpText": "",
+        "placeholder": ""
+      },
+      "refuseBtn": {
+        "label": "Refuser",
+        "helpText": "",
+        "placeholder": ""
+      },
+      "showDetails": {
+        "label": "Voir les détails",
+        "helpText": "",
+        "placeholder": "Cacher"
+      },
+      "hideDetails": {
+        "label": "Cacher les details",
+        "helpText": "",
+        "placeholder": "Voir plus"
+      }
+    },
+    "styles": {
+      "title": "Styles",
+      "backgroundColor": "Arrière-plan",
+      "textColor": "Textes",
+      "linkColor": "Liens",
+      "fontSize": {
+        "label": "Taille du texte",
+        "helpText": ""
+      },
+      "padding": {
+        "label": "Padding",
+        "helpText": ""
+      },
+      "width": {
+        "label": "Largeur",
+        "helpText": ""
+      },
+      "borderRadius": {
+        "label": "Border radius",
+        "helpText": ""
+      },
+      "position": {
+        "label": "Position",
+        "helpText": "",
+        "options": {
+          "topLeft": "En haut à gauche",
+          "topRight": "En haut à droite",
+          "bottomLeft": "En bas à gauche",
+          "bottomRight": "En bas à droite",
+          "center": "Au centre"
+        }
+      }
+    },
+    "links": {
+      "title": "Liens",
+      "privacyPolicy": {
+        "label": "Politique de confidentialité",
+        "helpText": "",
+        "placeholder": ""
+      }
+    }
+  },
+  "Actions": {
+    "enable": "Activer",
+    "disable": "Désactiver",
+    "next": "Suivant",
+    "previous": "Précédent"
+  },
+  "Notifications": {
+    "popupEnabled": "Votre popup est désormais activée",
+    "popupDisabled": "Votre popup est désormais désactivée",
+    "discountApplied": "La promotion a été appliquée"
+  },
+  "Errors": {
+    "UPDATE_PLAN": "Nous n'avons pas pu mettre à jour votre abonnement",
+    "FETCHING_DATA": "Nous n'avons pas pu récupérer vos données",
+    "APPLY_DISCOUNT": "Le code promotionnel est invalide"
+  },
+  "locale_en": "Anglais",
+  "locale_fr": "Français",
+  "learn_more": "En savoir plus"
+}

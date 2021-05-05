@@ -1,0 +1,21 @@
+.accordion img {
+  width: 100%;
+}
+
+.accordion_head {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px solid lightgray;
+  padding: 20px;
+  transition: all 300ms ease-out;
+  font-weight: 500;
+}
+
+.accordion_head:hover, .accordion_head__active {
+  background: rgba(0,0,0,.03);
+}
+
+.accordion_content {
+  padding: 20px;
+}
