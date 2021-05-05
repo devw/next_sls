@@ -1,25 +1,36 @@
-import "../styles/globals.css";
+import { useEffect } from "react";
 import Head from "next/head";
 import { AppProvider as PolarisProvider, Frame } from "@shopify/polaris";
-import { DesignPopupProvider } from "@contexts/DesignPopup/DesignPopup.context";
-import AlfredLayout from "@components/AlfredLayout/AlfredLayout.component";
-import { ConfigurationProvider } from "@contexts/Configuration/Configuration.context";
-import { UserProvider } from "@contexts/User/User.context";
 import { Provider as AppBridgeProvider } from "@shopify/app-bridge-react";
+import "@shopify/polaris/dist/styles.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { UserProvider } from "@contexts/User/User.context";
+import { ConfigurationProvider } from "@contexts/Configuration/Configuration.context";
+import { DesignPopupProvider } from "@contexts/DesignPopup/DesignPopup.context";
 import { isDev } from "@utils/Env.utils";
-
+import AlfredLayout from "@components/AlfredLayout/AlfredLayout.component";
 import { appWithTranslation } from "next-i18next";
+import { launchServices } from "@utils/Services.utils";
 import { useRouter } from "next/dist/client/router";
 
-const MyApp = ({ Component, pageProps }) => {
+export default appWithTranslation(function Application({
+    Component,
+    pageProps,
+}) {
     const router = useRouter();
-    router.locale = "it";
+    console.log(`---router.locale----  ${router.locale}`);
     const polarisTranslations = require(`@shopify/polaris/locales/${router.locale}.json`);
     const appBridgeConfig = {
         apiKey: process.env.SHOPIFY_API_KEY,
         shopOrigin: isDev() ? process.env.DEV_SHOPIFY_STORE : router.query.shop,
         forceRedirect: true,
     };
+
+    useEffect(() => {
+        launchServices();
+    }, []);
+
     return (
         <PolarisProvider
             features={{ newDesignLanguage: true }}
@@ -47,6 +58,4 @@ const MyApp = ({ Component, pageProps }) => {
             </AppBridgeProvider>
         </PolarisProvider>
     );
-};
-
-export default appWithTranslation(MyApp);
+});
