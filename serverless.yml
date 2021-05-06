@@ -1,14 +1,20 @@
-myNextApplication:
+cookiebot_sls_lambda:
   component: "@sls-next/serverless-component@1.19.0-alpha.35"
   inputs:
+    bucketRegion: us-east-1
     cloudfront:
       # if you want to use an existing cloudfront distribution, provide it here
       distributionId: E1YZF2UWCTIUP5 #optional
     enableS3Acceleration: false
     useServerlessTraceTarget: true
-    bucketName: cookiebot-v2-test
+    bucketName: ${env.APP_NAME}-v2-test
     runtime:
-      defaultLambda: "nodejs12.x"
-      apiLambda: "nodejs12.x"
-      imageLambda: "nodejs12.x" 
+      defaultLambda: "nodejs14.x"
+      apiLambda: "nodejs14.x"
+      imageLambda: "nodejs14.x"
+    name:
+      defaultLambda: ${env.APP_NAME}-DefaultLambda
+      apiLambda: ${env.APP_NAME}-ApiLambda
+      imageLambda: ${env.APP_NAME}-ImageLambda
+
 
