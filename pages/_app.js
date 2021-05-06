@@ -22,7 +22,8 @@ export default appWithTranslation(function Application({
     const polarisTranslations = require(`@shopify/polaris/locales/${router.locale}.json`);
     const appBridgeConfig = {
         apiKey: process.env.SHOPIFY_API_KEY,
-        shopOrigin: isDev() ? process.env.DEV_SHOPIFY_STORE : router.query.shop,
+        // TODO why router.query.shop is not defined?
+        shopOrigin: true ? process.env.DEV_SHOPIFY_STORE : router.query.shop,
         forceRedirect: true,
     };
 
