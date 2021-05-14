@@ -70,7 +70,7 @@ export default function CookieConsentDialog({ faq }) {
             </Card.Section>
           )}
           <Card.Section title="STILL HAVE SOME QUESTIONS ?">
-            Head to our <Link url="https://alfred-apps.crisp.help/" external>Help Center</Link> where we try to explain everything in much more detail.
+            Head to our <Link url="https://alfred-apps-cookiebot-compliance-suite.crisp.help/" external>Help Center</Link> where we try to explain everything in much more detail.
           </Card.Section>
         </Card>
       </Layout.Section>
