@@ -4,6 +4,8 @@ import { useTranslation } from 'next-i18next'
 import { UserContext } from '@contexts/User/User.context'
 import { ConfigurationContext } from '@contexts/Configuration/Configuration.context'
 import EmailNotifications from './EmailNotifications/EmailNotifications.component'
+import ProxyPages from './ProxyPages/ProxyPages.component'
+
 import _ from 'lodash'
 
 export default function GlobalConfiguration() {
@@ -88,6 +90,9 @@ export default function GlobalConfiguration() {
 
           <Card.Section title="Notifications">
             <EmailNotifications />
+          </Card.Section>
+          <Card.Section title="Request Pages Settings">
+            <ProxyPages />
           </Card.Section>
         </Card>
       </Layout.AnnotatedSection>

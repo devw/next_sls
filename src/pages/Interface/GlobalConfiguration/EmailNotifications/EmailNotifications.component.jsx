@@ -6,7 +6,7 @@ import classNames from 'classnames'
 
 function NotificationChoice({ id, label, description, disabled }) {
   const { data, update } = useContext(ConfigurationContext)
-  const checked = data?.email_alerts?.notifications[id]
+  const checked = data?.email_alerts?.notifications?.[id]
   
   const toggleCheckbox = () => {
     if (!disabled) {

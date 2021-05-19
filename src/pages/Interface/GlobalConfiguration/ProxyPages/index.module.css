@@ -1,0 +1,19 @@
+.choice {
+    cursor: pointer;
+    padding: 8px;
+    margin: 8px 0px;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.choice__selected {
+    background: #111;
+}
+
+.main {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 10px 0px;
+}
